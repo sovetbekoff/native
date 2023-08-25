@@ -197,6 +197,14 @@ lastBtn.addEventListener("click", () => {
   saveButton.textContent = "Сохранить";
   saveButton.setAttribute("id", "saveStudentBtn1");
 
+  const closeButton = document.createElement("button");
+  closeButton.textContent = "X";
+  closeButton.classList.add("closeButton");
+
+  closeButton.addEventListener("click", () => {
+    newCard.parentNode.removeChild(newCard);
+  });
+
   saveButton.addEventListener("click", () => {
     const themeValue = newThemeInput.value.trim();
     const factValue = newFactInput.value.trim();
@@ -226,17 +234,10 @@ lastBtn.addEventListener("click", () => {
       newCard.removeChild(newThemeInput);
       newCard.removeChild(newFactInput);
       newCard.removeChild(saveButton);
+      newCard.removeChild(closeButton);
     } else {
       alert("Заполните все поля");
     }
-  });
-
-  const closeButton = document.createElement("button");
-  closeButton.textContent = "X";
-  closeButton.classList.add("closeButton");
-
-  closeButton.addEventListener("click", () => {
-    newCard.parentNode.removeChild(newCard);
   });
 
   newCard.appendChild(newNumber);
