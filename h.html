@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./c.css" />
+    <link type="image/x-icon" href="./images/favicon.png" rel="shortcut icon" />
+    <title>Makers</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <img src="./images/logo.svg" alt="brand logo" />
+        <ul class="nav-list">
+          <li>Мои шаги</li>
+          <li>График обучения</li>
+          <li>Что я получу?</li>
+          <li>Бесплатные курсы</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Получи работу программистом</h2>
+      <h2 id="main-info2">в IT компании</h2>
+      <p>
+        Makers быстро обучит с нуля, даст практический опыт и будет с тобой до
+        твоей первой зарплаты.
+      </p>
+      <button>Получи консультацию</button>
+    </main>
+    <hr />
+    <div class="container tittle">
+      <p>Истории успехов выпускников</p>
+      <div class="students">
+        <button id="btnCreate">+</button>
+        <p>Все выпускники</p>
+      </div>
+    </div>
+    <div class="wrapper container">
+      <ul class="carousel container"></ul>
+      <ul class="carousel container" id="cardUl"></ul>
+    </div>
+    <div class="main-modal">
+      <div class="inner-modal">
+        <h3>Добавить студента</h3>
+        <button id="btnClose">X</button>
+        <form class="form1">
+          <p>Ссылка на фото</p>
+          <input type="text" id="inpImage" placeholder="фото" />
+          <p>ФИО выпускника</p>
+          <input type="text" id="inpName" placeholder="имя" />
+          <p>Занимаемая должность</p>
+          <input type="text" id="inpProfession" placeholder="должность" />
+          <button id="btnSave">Save</button>
+        </form>
+      </div>
+    </div>
+    <div class="partners">
+      <div class="firstLinePart">
+        <img src="./imgs/Frame 359986.png" alt="" />
+      </div>
+      <div class="secondLinePart">
+        <img src="./imgs/Frame 359987.png" alt="" />
+      </div>
+    </div>
+    <div class="blueContainer">
+      <div>
+        <div class="blue-firstElem">
+          Узнай с чего начать карьеру в IT, <br />
+          о направлениях и профессиях
+        </div>
+        <div class="ItJobs">Все IT профессии тут</div>
+      </div>
+      <div class="lap">
+        <img src="./imgs/Frame.png" alt="" class="laptopImg" />
+      </div>
+    </div>
+
+    <div class="whiteContainer">
+      <div class="itsJustgraypone">
+        <img src="./imgs/Frame 48825.png" alt="" class="grayPhone" />
+      </div>
+      <div id="inputContainer" style="display: none">
+        <div>Добавить новый факт:</div>
+        <div class="itsInputs">
+          <input type="text" id="studentInput" placeholder="Введите значение" />
+        </div>
+        <button id="saveStudentBtn">Сохранить</button>
+        <button class="closeStudentBtn">X</button>
+      </div>
+      <div class="ugot">
+        <div style="font-size: 20px; font-weight: 700; line-height: 45px">
+          <button class="createUGot" id="addStudentBtn">+</button>
+          Что ты получишь у нас:
+        </div>
+        <div style="width: 73%; margin-bottom: 5%" class="facts">
+          <!-- <div class="itsNumber">01</div> -->
+          <p class="itsText" id="studentsList">
+            Изучение программирования с нуля в 2 раза быстрее чем на других
+            курсах. Мы - самые выгодные среди всех курсов в Бишкеке!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="lastContainer" style="margin-top: 4%">
+      <div class="firstCild">
+        <h2 class="fFChild">Как мы из тебя сделаем программиста?</h2>
+        <p class="lFchild">
+          У тебя будет личный менеджер на каждом из этих этапов.
+          <button class="lastBtn">+</button>
+        </p>
+      </div>
+      <div class="preventElements">
+        <div class="lastElements">
+          <div class="lastNumber">01</div>
+          <div class="lastTheme">Выберем направление</div>
+          <div class="lastFact">
+            Определим направление, что изучать и построим путь с чего начать.
+          </div>
+        </div>
+      </div>
+      <div class="preventElements"></div>
+    </div>
+    <script src="./js.js"></script>
+  </body>
+</html>
